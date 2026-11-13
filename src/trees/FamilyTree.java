@@ -138,6 +138,9 @@ public class FamilyTree {
             String name1, String name2)
             throws TreeException {
 
+        if (root == null)
+            throw new TreeException("The family tree is empty.");
+
         TreeNode node1 =
                 root.getNodeWithName(name1);
 
